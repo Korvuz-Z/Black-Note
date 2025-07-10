@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#121212">
+
+    <EditText
+        android:id="@+id/noteTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Título"
+        android:textColorHint="#CCCCCC"
+        android:textColor="#FFFFFF"
+        android:background="@android:color/darker_gray"
+        android:padding="10dp" />
+
+    <EditText
+        android:id="@+id/noteContent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:hint="Escribe tu nota aquí..."
+        android:textColorHint="#AAAAAA"
+        android:textColor="#FFFFFF"
+        android:background="@android:color/darker_gray"
+        android:gravity="top"
+        android:padding="10dp"
+        android:inputType="textMultiLine" />
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Guardar Nota"
+        android:textColor="#FFFFFF"
+        android:background="#333333"
+        android:padding="12dp"
+        android:layout_marginTop="10dp"/>
+</LinearLayout>
